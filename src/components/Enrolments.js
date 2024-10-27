@@ -125,7 +125,7 @@ const Enrolments = () => {
         </Table>
       </TableContainer>
       <TablePagination
-        rowsPerPageOptions={[10, 25, 50, 100]} // 确保选项值在可接受范围内
+        rowsPerPageOptions={[10, 25, 50, 100]} // Ensure that the option value is within an acceptable range
         component="div"
         count={enrolments.length}
         rowsPerPage={rowsPerPage}
