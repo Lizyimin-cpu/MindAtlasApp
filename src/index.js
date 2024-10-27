@@ -5,7 +5,7 @@ import App from "./App";
 import store from "./redux/store";
 
 const container = document.getElementById("root");
-const root = createRoot(container); // 使用 React 18 的 createRoot
+const root = createRoot(container); // createRoot using React 18
 
 root.render(
   <Provider store={store}>
