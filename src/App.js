@@ -1,6 +1,6 @@
 import React from "react";
 import Enrolments from "./components/Enrolments";
-import logo from "./logo.png"; // 根据实际路径导入图片
+import logo from "./logo.png"; // Import images based on the actual path
 
 function App() {
   return (
