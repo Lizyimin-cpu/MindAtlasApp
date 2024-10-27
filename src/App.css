@@ -7,8 +7,8 @@
   pointer-events: none;
 }
 nav {
-    background-color: #f8f9fa; /* 设置背景颜色 */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 添加阴影 */
+    background-color: #f8f9fa; /* setBackgroundColor */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Drop Shadow */
     padding: 10px 20px;
 }
 
