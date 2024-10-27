@@ -14,8 +14,6 @@ This project consists of two main parts:
     - [2. Frontend Setup](#2-frontend-setup)
   - [Database Setup](#database-setup)
   - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 The MindAtlas Project demonstrates proficiency in MySQL query writing as well as full-stack web application development using PHP and React.
@@ -94,6 +92,9 @@ This project is a simple web application that demonstrates user course enrolment
     "CompletionStatus": "in progress"
   }
 ]
+
+
+
 
 
 
