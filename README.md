@@ -14,7 +14,6 @@ This project consists of two main parts:
     - [2. Frontend Setup](#2-frontend-setup)
   - [Database Setup](#database-setup)
   - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Project Overview
@@ -100,7 +99,6 @@ This project is a simple web application that demonstrates user course enrolment
 - **Consistent formatting**: All instructions and command examples are consistently formatted, providing a clear and easy-to-follow setup guide.
 - **Comprehensive**: The document now covers the complete details of both the MySQL query and the web application setup, leaving no room for confusion.
 
-Feel free to use this complete `README.md` for your project.
 
 
 
