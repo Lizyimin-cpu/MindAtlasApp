@@ -38,6 +38,7 @@ INSERT INTO UserData (ID, FieldID, Data, UserID) VALUES
 (7, 3, 'Tester', 3);
 
 -- Step 3: Write the query to get the expected result
+
 SELECT 
     u.Username,
     MAX(CASE WHEN ufn.Field = 'Phone' THEN ud.Data END) AS Phone,
@@ -46,4 +47,6 @@ SELECT
 FROM User u
 JOIN UserData ud ON u.ID = ud.UserID
 JOIN UserFieldName ufn ON ud.FieldID = ufn.ID
-GROUP BY u.Username;
+GROUP BY u.Username
+ORDER BY u.Username ASC;
+
