@@ -8,7 +8,6 @@ This project consists of two main parts:
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
 - [Part 1 - MySQL Query Task](#part-1---mysql-query-task)
-  - [SQL Query](#sql-query)
 - [Part 2 - PHP and UI Application](#part-2---php-and-ui-application)
   - [Setup Instructions](#setup-instructions)
     - [1. Backend Setup](#1-backend-setup)
@@ -30,31 +29,13 @@ The MindAtlas Project demonstrates proficiency in MySQL query writing as well as
 
 This part involves writing a MySQL query to retrieve user information (phone, email, position) from three tables (`User`, `UserFieldName`, `UserData`) based on a specific data structure.
 
-### SQL Query
-Below is the SQL query to achieve the expected result for the MySQL task:
+## Part 2 - PHP and UI Application
 
-```sql
-SELECT 
-    u.Username,
-    MAX(CASE WHEN ufn.Field = 'Phone' THEN ud.Data END) AS Phone,
-    MAX(CASE WHEN ufn.Field = 'Email' THEN ud.Data END) AS Email,
-    MAX(CASE WHEN ufn.Field = 'Position' THEN ud.Data END) AS Position
-FROM User u
-JOIN UserData ud ON u.ID = ud.UserID
-JOIN UserFieldName ufn ON ud.FieldID = ufn.ID
-GROUP BY u.Username;
+This project is a simple web application that demonstrates user course enrolments. It is built using PHP for the backend and React for the frontend. The project includes functionalities to view user enrolments, and it allows easy setup of the backend and frontend components.
 
-## Project Overview
-The MindAtlas App is designed to showcase a list of users and their course enrolments. It includes a PHP backend that connects to a MySQL database, and a React frontend that consumes the API and displays the data.
+### Setup Instructions
 
-## Technologies Used
-- **Backend:** PHP, MySQL
-- **Frontend:** React, Material-UI
-- **Version Control:** Git, GitHub
-
-## Setup Instructions
-
-### 1. Backend Setup
+#### 1. Backend Setup
 1. Clone the repository:
     ```bash
     git clone https://github.com/Lizyimin-cpu/MindAtlasApp.git
@@ -70,7 +51,7 @@ The MindAtlas App is designed to showcase a list of users and their course enrol
     sudo apachectl start
     ```
 
-### 2. Frontend Setup
+#### 2. Frontend Setup
 1. Navigate to the frontend project directory:
     ```bash
     cd mindatlas-frontend
@@ -84,7 +65,7 @@ The MindAtlas App is designed to showcase a list of users and their course enrol
     npm start
     ```
 
-## Database Setup
+### Database Setup
 1. Use the provided `database_setup.sql` file to initialize the database:
     ```bash
     mysql -u root -p < database_setup.sql
@@ -94,10 +75,10 @@ The MindAtlas App is designed to showcase a list of users and their course enrol
    - Create `Users`, `Courses`, and `Enrolments` tables
    - Populate the tables with some initial data
 
-## API Endpoints
+### API Endpoints
 - **GET `/api/enrolments`** - Retrieves all user enrolments with details.
 
-### Example Response:
+#### Example Response:
 ```json
 [
   {
@@ -113,5 +94,6 @@ The MindAtlas App is designed to showcase a list of users and their course enrol
     "CompletionStatus": "in progress"
   }
 ]
+
 
 
