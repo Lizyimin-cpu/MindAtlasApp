@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Enrolments from "./components/Enrolments";
+import logo from "./logo.png"; // 根据实际路径导入图片
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav style={{ display: "flex", alignItems: "center", padding: "10px" }}>
+        <img src={logo} alt="MindAtlas Logo" style={{ height: "50px" }} />
+      </nav>
+      <Enrolments />
     </div>
   );
 }
